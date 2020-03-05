@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i');
+
+body{
+		font:16px 'Open Sans',sans-serif;
+		margin:0;
+	}
+	*{
+		box-sizing: border-box;
+	}
+	h1,h2,p{
+			font-weight: 100;
+			margin:0;
+	}
+		main{
+			width:1024px;
+			margin:0 auto;
+	}
+	ul{
+		margin:0;
+		list-style: none;
+		padding:0;
+		font-size:0;
+		background: #222;
+
+	}
+	a{
+		text-decoration: none;
+		color: #222;
+	}
+	p{
+		line-height: 22px;
+	}
+
+/*thème********/
+ul li{
+	display: inline-block;
+	font-size: 1rem;
+	width: 200px;
+	text-align: center;
+	line-height: 45px;
+	
+
+}
+ul li > a{
+	color: #fafafa;
+	display: block;
+	transition: 0.5s ease-in-out;
+	
+
+}
+ul li > a:hover{
+	background: #ccc;
+}
+h1{
+	text-align: center;
+	line-height: 45px;
+	margin: 30px 0;
+}
+.warning{
+	width: 400px;
+	padding:15px;
+	text-align: center;
+	margin: 0 auto;
+	background: #D50000;
+	color: #fafafa;
+
+}
+section p{
+	padding:10px;
+	background: #fafafa;
+}
+section h2, div h2{
+	background: #2962FF;
+	padding:10px;
+	line-height: 35px;
+	color: #fafafa;
+}
+.grid-img > ul{
+	background: #fafafa;
+	padding: 5px;
+}
+.grid-img > ul li:nth-child(2){
+	margin: 0 5px;
+}
+.grid-img > ul li{
+	width: calc(100% / 3 - 3.5px);
+}
+.grid-img > ul li img{
+	display: block;
+	width: 100%;
+}
+/*icones */
+.grid-icone{
+	
+}
+.grid-icone > ul{
+	text-align: center;
+	background: transparent;
+	line-height:normal;
+	margin-top: 10px;
+}
+.grid-icone > ul li{
+	width: calc(50% / 4 );
+	line-height:50%;
+}
+
+section ul{
+	background: #E1F5FE;
+
+}
+section ul li{
+	display: block;
+	text-align: left;
+	padding: 10px;
+	width: auto;
+}
+section ul li:nth-child(2n+1){
+	background: #B3E5FC;
+}
+main h1::before{
+	content: '\f369';
+	font-family: 'Font Awesome 5 Brands';
+	margin-right: 5px;
+}
+section h2::before{
+	content: '\f044';
+	font-family: 'Font Awesome 5 Free';
+	margin-right: 5px;
+}
+section ul li::before{
+	content: '\f1c9';
+	font-family: 'Font Awesome 5 Free';
+	margin-right: 5px;
+	color: #448AFF;
+}
+
+section input, section label, section textarea{
+	display: block;
+	width: 100%;
+	padding:8px;
+}
+section input{
+	border: solid 1px transparent;
+	border-bottom-color: #ccc;
+	background: #fafafa;
+}
+section [placeholder]{
+	font-size: 1rem;
+	font-style: italic;
+	transition-duration: 0.5s;
+}
+section [placeholder]:focus{
+	background: #FFCDD2;
+}
+section textarea{
+	border: solid 1px #ccc;
+	resize: none;
+}
+section input[type="submit"]{
+	border:0;
+	margin-top:5px;
+	font-size: 1rem;
+	width: 100px;
+	background: #558B2F;
+	color: #fafafa;
+	cursor: pointer;
+	transition-duration: 0.5s;
+}
+section input[type="submit"]:hover{
+	filter: brightness(0.7);
+}
+.fa-frown{
+	font-size: 2rem;
+	vertical-align: middle;
+
+}
+footer{
+	line-height: 50px;
+	text-align: center;
+	margin-top: 10px;
+}
