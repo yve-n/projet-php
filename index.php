@@ -15,13 +15,13 @@
 				if(isset($_GET['page'])){
 				//variable pour $_GET
 				$root = $_GET['page'];
-						if($root=="index.html"){
+						if($root==1){
 							include_once("./template/index.html");
 						}
-						if($root=="portfolio.html"){
+						if($root==2){
 							include_once("./template/portfolio.html");
 						}
-						if($root=="contact.php"){
+						if($root==3){
 							include_once("./template/contact.php");
 						}
 						else if($root>3 || $root==0){
