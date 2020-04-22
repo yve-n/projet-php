@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i');
+html{
+	font-size: 62.5%; /* equivaut à 10px */
+}
 body{
-		font:16px 'Open Sans',sans-serif;
+		font:1.6rem'Open Sans',sans-serif;
 		margin:0;
 	}
 	*{
@@ -11,7 +14,7 @@ body{
 			margin:0;
 	}
 		main{
-			width:1024px;
+			width:102.4rem;
 			margin:0 auto;
 	}
 	ul{
@@ -20,6 +23,7 @@ body{
 		padding:0;
 		font-size:0;
 		background: #222;
+		text-align: center;
 
 	}
 	a{
@@ -27,19 +31,17 @@ body{
 		color: #222;
 	}
 	p{
-		line-height: 22px;
+		line-height: 2.2rem;
 	}
 
 /*thème********/
-ul{
-	text-align: center;
-}
+
 ul li{
 	display: inline-block;
-	font-size: 1rem;
-	width: 200px;
+	font-size: 1.6rem;
+	width: 20rem;
 	text-align: center;
-	line-height: 45px;
+	line-height: 4.5rem;
 
 
 }
@@ -55,12 +57,12 @@ ul li > a:hover{
 }
 h1{
 	text-align: center;
-	line-height: 45px;
-	margin: 30px 0;
+	line-height: 4.5rem;
+	margin: 3rem 0;
 }
 .warning{
-	width: 400px;
-	padding:15px;
+	width: 40rem;
+	padding:1.5rem;
 	text-align: center;
 	margin: 0 auto;
 	background: #D50000;
@@ -68,24 +70,24 @@ h1{
 
 }
 section p{
-	padding:10px;
+	padding:1rem;
 	background: #fafafa;
 }
 section h2, div h2{
 	background: #2962FF;
-	padding:10px;
-	line-height: 35px;
+	padding:1rem;
+	line-height: 3.5rem;
 	color: #fafafa;
 }
 .grid-img > ul{
 	background: #fafafa;
-	padding: 5px;
+	padding: 0.5rem;
 }
 .grid-img > ul li:nth-child(2){
-	margin: 0 5px;
+	margin: 0 0.5rem;
 }
 .grid-img > ul li{
-	width: calc(100% / 3 - 3.5px);
+	width: calc(100% / 3 - 0.35rem);
 }
 .grid-img > ul li img{
 	display: block;
@@ -111,7 +113,7 @@ section h2, div h2{
 	text-align: center;
 	background: transparent;
 	line-height:normal;
-	margin-top: 10px;
+	margin-top: 1rem;
 }
 .grid-icone > ul li{
 	width: calc(50% / 4 );
@@ -125,7 +127,7 @@ section ul{
 section ul li{
 	display: block;
 	text-align: left;
-	padding: 10px;
+	padding: 1rem;
 	width: auto;
 }
 section ul li:nth-child(2n+1){
@@ -134,32 +136,32 @@ section ul li:nth-child(2n+1){
 main h1::before{
 	content: '\f369';
 	font-family: 'Font Awesome 5 Brands';
-	margin-right: 5px;
+	margin-right: 0.5rem;
 }
 section h2::before{
 	content: '\f044';
 	font-family: 'Font Awesome 5 Free';
-	margin-right: 5px;
+	margin-right: 0.5rem;
 }
 section ul li::before{
 	content: '\f1c9';
 	font-family: 'Font Awesome 5 Free';
-	margin-right: 5px;
+	margin-right: 0.5rem;
 	color: #448AFF;
 }
 
 section input, section label, section textarea{
 	display: block;
 	width: 100%;
-	padding:8px;
+	padding:0.8rem;
 }
 section input{
-	border: solid 1px transparent;
+	border: solid 0.1rem transparent;
 	border-bottom-color: #ccc;
 	background: #fafafa;
 }
 section [placeholder]{
-	font-size: 1rem;
+	font-size: 1.6rem;
 	font-style: italic;
 	transition-duration: 0.5s;
 }
@@ -167,14 +169,14 @@ section [placeholder]:focus{
 	background: #FFCDD2;
 }
 section textarea{
-	border: solid 1px #ccc;
+	border: solid 0.1rem #ccc;
 	resize: none;
 }
 section input[type="submit"]{
 	border:0;
-	margin-top:5px;
+	margin-top:0.5rem;
 	font-size: 1rem;
-	width: 100px;
+	width: 10rem;
 	background: #558B2F;
 	color: #fafafa;
 	cursor: pointer;
@@ -189,7 +191,7 @@ section input[type="submit"]:hover{
 
 }
 footer{
-	line-height: 50px;
+	line-height: 5rem;
 	text-align: center;
-	margin-top: 10px;
+	margin-top: 1rem;
 } 
