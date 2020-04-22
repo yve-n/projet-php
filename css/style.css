@@ -1,8 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i');
-
-/* html{
-	font-size: 62.5%;
-} */
 body{
 		font:16px 'Open Sans',sans-serif;
 		margin:0;
@@ -13,7 +9,6 @@ body{
 	h1,h2,p{
 			font-weight: 100;
 			margin:0;
-			
 	}
 		main{
 			width:1024px;
@@ -21,9 +16,9 @@ body{
 	}
 	ul{
 		margin:0;
+		list-style: none;
 		padding:0;
 		font-size:0;
-		list-style: none;
 		background: #222;
 
 	}
@@ -36,39 +31,27 @@ body{
 	}
 
 /*thème********/
-:root{
-    --color-default:#ccc;
-    --color-primary:rgba(52, 152, 219,1.0);
-    --color-success:rgba(241, 196, 15,1.0);
-    --color-warning:rgba(192, 57, 43,1.0);
+ul{
+	text-align: center;
 }
-/* nav ul{
-	padding: 0px;
-	margin: 0 auto;
-	max-width: 800px;
-	list-style-type: none;
-	font-size: 0;
-} */
- ul li{
+ul li{
 	display: inline-block;
 	font-size: 1rem;
 	width: 200px;
 	text-align: center;
 	line-height: 45px;
-	transition: all 0.5s 0.1s ease-in-out;
-	
+
 
 }
-ul li a{
-	text-transform: uppercase;
+ul li > a{
 	color: #fafafa;
 	display: block;
-	transition-duration: 0.8s;
-	
+	transition: 0.5s ease-in-out;
+
 
 }
 ul li > a:hover{
-	background: var(--color-primary);
+	background: #ccc;
 }
 h1{
 	text-align: center;
@@ -80,7 +63,7 @@ h1{
 	padding:15px;
 	text-align: center;
 	margin: 0 auto;
-	background: var(--color-warning);
+	background: #D50000;
 	color: #fafafa;
 
 }
@@ -108,9 +91,23 @@ section h2, div h2{
 	display: block;
 	width: 100%;
 }
+/* .grid-lig >ul{
+	background: #fafafa;
+	padding: 5px;
+}
+.grid-lig > ul li:nth-child(2){
+	margin: 0 5px;
+}
+.grid-lig > ul li{
+	width:calc(100% / 3 - 3.5px);
+}
+.grid-lig > ul li img{
+	display: block;
+	width: 100%;
+} */
 /*icones */
 /* .grid-icone{
-	
+
 } */
 .grid-icone > ul{
 	text-align: center;
@@ -197,4 +194,4 @@ footer{
 	line-height: 50px;
 	text-align: center;
 	margin-top: 10px;
-}
+} 

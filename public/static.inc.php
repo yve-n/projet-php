@@ -1,5 +1,5 @@
 <?php
-	const titre ="EDW école pour les métiers du web";
+	const titre ="M2L Maison des Ligues de Lorraine";
 	const css="./css/style.css";
-	const lang="en";
+	const lang="fr";
 ?>

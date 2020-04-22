@@ -19,7 +19,7 @@
 							include_once("./template/index.html");
 						}
 						if($root==2){
-							include_once("./template/portfolio.html");
+							include_once("./template/portfolio.php");
 						}
 						if($root==3){
 							include_once("./template/contact.php");
