@@ -40,8 +40,8 @@
 		<li><a href="https://www.ffnatation.fr/" target="_blank"><img src="./asset/natation.jpg" alt="" /></a></li>
 		<li><a href="http://www.fft.fr/" target="_blank"><img src="./asset/tennis.jpg" alt="" /></a></li>
 		<li><a href="https://www.ffc.fr/" target="_blank"><img src="./asset/cyclisme.jpg" alt="" /></a></li>
-		<!-- <li><a href="http://www.fnfda-formation.fr/newsite/index.html" target="_blank"><img src="./asset/fitness.jpg" alt="" /></a></li>
+		<li><a href="http://www.fnfda-formation.fr/newsite/index.html" target="_blank"><img src="./asset/fitness.jpg" alt="" /></a></li>
 		<li><a href="https://www.athle.fr/" target="_blank"><img src="./asset/athletisme.jpg" alt="" /></a></li>
-		<li><a href="https://www.ffe.com/" target="_blank"><img src="./asset/equitation.jpg" alt="" /></a></li> -->
+		<li><a href="https://www.ffe.com/" target="_blank"><img src="./asset/equitation.jpg" alt="" /></a></li>
 	</ul>
 </div>
