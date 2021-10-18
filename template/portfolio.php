@@ -37,11 +37,11 @@
 <div class="grid-img">
 	<h2>Nos DISCIPLINES</h2>
 	<ul>
-		<li><a href="https://www.ffnatation.fr/" target="_blank"><img src="./asset/natation.jpg" alt="" /></a></li>
-		<li><a href="http://www.fft.fr/" target="_blank"><img src="./asset/tennis.jpg" alt="" /></a></li>
-		<li><a href="https://www.ffc.fr/" target="_blank"><img src="./asset/cyclisme.jpg" alt="" /></a></li>
-		<li><a href="http://www.fnfda-formation.fr/newsite/index.html" target="_blank"><img src="./asset/fitness.jpg" alt="" /></a></li>
-		<li><a href="https://www.athle.fr/" target="_blank"><img src="./asset/athletisme.jpg" alt="" /></a></li>
-		<li><a href="https://www.ffe.com/" target="_blank"><img src="./asset/equitation.jpg" alt="" /></a></li>
+		<li><a href="https://www.ffnatation.fr/" target="_blank"><img src="/icones/asset/natation.jpg" alt="natation" /></a></li>
+		<li><a href="http://www.fft.fr/" target="_blank"><img src="/icones/asset/tennis.jpg" alt="tennis" /></a></li>
+		<li><a href="https://www.ffc.fr/" target="_blank"><img src="/icones/asset/cyclisme.jpg" alt="cyclisme" /></a></li>
+		<li><a href="http://www.fnfda-formation.fr/newsite/index.html" target="_blank"><img src="/icones/asset/fitness.jpg" alt="fitness" /></a></li>
+		<li><a href="https://www.athle.fr/" target="_blank"><img src="/icones/asset/athletisme.jpg" alt="athlétisme" /></a></li>
+		<li><a href="https://www.ffe.com/" target="_blank"><img src="/icones/asset/equitation.jpg" alt="équitation" /></a></li>
 	</ul>
 </div>

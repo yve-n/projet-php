@@ -193,8 +193,10 @@ section input[type="submit"]:hover{
 footer{
 	line-height: 5rem;
 	text-align: center;
-	margin-top: 1rem;
+	margin-top: 5rem;
+	
 } 
+
 @media(max-width: 618px){
 	nav ul li a{
         font-size: 1rem;

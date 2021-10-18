@@ -1,6 +1,6 @@
 <head>
 	<meta charset="UTF-8">
-	<meta name="description" content="EDW école du web">
+	<meta name="description" content="MDS maison du sport">
 	<meta name="author" content="NYC">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">

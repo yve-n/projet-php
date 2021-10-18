@@ -1,57 +1,50 @@
 <?php
-$user = 'root';
-$pass = '';
-$port = 3306;
-try {
-    $db = new PDO('mysql:host=localhost;port=$port;dbname=ecole', $user, $pass, array(
-        PDO::ATTR_PERSISTENT => true));
-} catch (PDOException $e) {
-    die('Erreur : '.$e->getMessage());
+try{
+$bdd=new PDO('mysql:host=sql105.byethost10.com; dbname=b10_30095402_ecole; charset=utf8','b10_30095402','yvecarelle98');
 }
-
-if(isset($_POST['envoyer'])){
-    $ligue = $_POST['ligue'];
-    $campus = $_POST['campus'];
-    $niveau = $_POST['niveau'];
-    $formation = $_POST['formation'];
-    $prenom = $_POST['prenom'];
-    $nom = $_POST['nom'];
-    $telephone = $_POST['telephone'];
-    $mail = $_POST['mail'];
-    $etudes = $_POST['etudes'];
-    
-    if (!empty($ligue) && !empty($campus) && !empty($niveau) 
-        && !empty($formation && !empty($prenom) && !empty($nom) 
-        && !empty($telephone) && !empty($mail) && !empty($etudes)&& isset($_POST['rdv']))) {
-
-        $requete=$db->prepare('INSERT INTO eleves(ligue, campus, niveau, formation, 
-        prenom, nom, telephone, mail, etudes) VALUES (:ligue, :campus, :niveau, :formation, :prenom,
-         :nom, :telephone, :mail, :etudes)');
-
-         $requete->bindValue(':ligue', $ligue);
-         $requete->bindValue(':campus', $campus);
-         $requete->bindValue(':niveau', $niveau);
-         $requete->bindValue(':formation', $formation);
-         $requete->bindValue(':prenom', $prenom);
-         $requete->bindValue(':nom', $nom);
-         $requete->bindValue(':telephone', $telephone);
-         $requete->bindValue(':mail', $mail);
-         $requete->bindValue(':etudes', $etudes);
-
-         $result = $requete->execute();
-
-         if(!$result){
-            echo " Un problème est survenu, l'enregistrement n'a pas été éffectué";
-         }else{
-            echo '<p class="success" >votre demande a été enregistrée <br>
-            Vous serez contacté par l\'organisme</p>';
-         }
-    }else {
-        echo "tous les champs sont requis";
-    }
+catch(Exception $e) {
+    die('Ereur vous concernant: '.$e->getMessage());
 }
 ?>
 
+  <?php
+    $nom = $_POST['nom'];
+    $prenom = $_POST['prenom'];
+    $email = $_POST['email'];
+    $telephone = $_POST['telephone'];
+    $ligue = $_POST['ligue'];
+    $formation = $_POST['formation'];
+    $campus = $_POST['campus'];
+    $niveau = $_POST['niveau'];
+    
+    
+    $requete=$bdd->prepare('SELECT * FROM etudiant where email = ?');
+    $requete->execute(array($email));
+    if (!$resultat = $requete->fetch()){
+  
+    $requete2=$bdd->prepare('INSERT INTO etudiant (nom, prenom, email, telephone, ligue, formation, campus, niveau) 
+    VALUES (:nom, :prenom, :email, :telephone, :ligue, :formation, :campus, :niveau)');
 
+    $array = array(
+      'nom' => $nom,
+      'prenom' => $prenom,
+      'email' => $email,
+      'telephone' => $telephone,
+      'ligue' => $ligue,
+      'formation' => $formation,
+      'campus' => $campus,
+      'niveau' => $niveau
+    );
+    $requete2->execute($array);
 
+    echo '<script language="Javascript">
+    document.location.replace("/template/data.html");
+    </script>';
 
+    }
+    else {
+      echo '<script language="Javascript">
+      document.location.replace("/template/index.html");
+      </script>';
+      }
+  ?>
