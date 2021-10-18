@@ -1,6 +1,6 @@
 <?php
 try{
-$bdd=new PDO('mysql:host=sql105.byethost10.com; dbname=b10_30095402_ecole; charset=utf8','b10_30095402','yvecarelle98');
+$bdd=new PDO('mysql:host=localhost; dbname=ecole; charset=utf8','root','');
 }
 catch(Exception $e) {
     die('Ereur vous concernant: '.$e->getMessage());
